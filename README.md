@@ -9,7 +9,7 @@ Car will automatically charge offpeak anyway and top up if required (normal char
 40% of home battery is usually enough for my daily commute
 
 ----------------------------------------------------------------------------------------------------------
-miner.ps1 - collects my solar data into an sqlexpress database. Thing will live on a Pi on local network
+miner.ps1 - collects data into an sqlexpress database. Thing will live on a Pi on local network
 ----------------------------------------------------------------------------------------------------------
 
 had to fudge my own quasi API as the vendor will not grant me access to it (atm..)
