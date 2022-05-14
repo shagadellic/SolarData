@@ -1,5 +1,3 @@
-# spaghetti
-shared code base
 ------------------------------------------------------------------------------------------------------------
 Create a conditions based charge automation process to top up the car from home solar & battery
 ------------------------------------------------------------------------------------------------------------
