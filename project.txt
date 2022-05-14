@@ -1,0 +1,29 @@
+<#
+
+P.Sanders 13/05/2021 v1.1
+
+Crude way of mining data for my solar install, given they wont
+give me access to their API.
+
+Vendor website uses server side java to render pages and typical
+scraping methods will not work. Hence this 'creative' approach. 
+
+Prerequisite is a session cookie of the authenticated website.
+Login to the site on the browser once, then put the url and the
+site title into the config.xml file
+
+  <Vendor>
+    <URL>https://portal.vendor.com/ui/#/cgi/BLAH123</URL>
+    <Title>Vendor Website Title - Google Chrome</Title>
+  </Vendor>
+
+Run miner.ps1 from task scheduler / cron. Suggest 10 minute loop.
+
+The mined data can then be used by other apps when connected to the 
+database. The charge_window column can be used by connected apps 
+for logic status they wish to record. ie: 'charge car start / stop' 
+etc
+
+Requires sqlexpress
+
+#>
