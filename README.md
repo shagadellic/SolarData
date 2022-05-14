@@ -14,7 +14,11 @@ miner.ps1 - collects data into an sqlexpress database. Thing will live on a Pi o
 ----------------------------------------------------------------------------------------------------------
 
 had to fudge my own quasi API as the vendor will not grant me access to it (atm..)
-if you have a powerwall things may be different
+
+will move the line numbers to retrieve into the config.xml
+keep code static
+
+if you have a powerwall things may be different with API access
 
 ----------------------------------------------------------------------------------------------------------
 new apk - will connect local db and have UI to select conditions to start / stop charging 
