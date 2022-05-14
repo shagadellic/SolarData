@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Config>
+  <Database>
+    <ServerName>localhost\sqlexpress</ServerName>
+    <DatabaseName>redback</DatabaseName>
+    <UserName>redback</UserName>
+    <UserPass>redback</UserPass>
+  </Database>  
+  <Vendor>
+    <URL>https://portal.redbacktech.com/ui/#/dashboard/RB21012202220043</URL>
+    <Title>Dashboard - Redback Technologies - Google Chrome</Title>
+  </Vendor>
+</Config>
