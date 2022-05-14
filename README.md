@@ -2,10 +2,11 @@
 Create conditions based charge automation to top up EV from home solar & battery
 ------------------------------------------------------------------------------------------------------------
 
-example- start charging the car when there is 'x.x kw' solar and the home battery is at 100%
-example- stop charging the car when the is '0kw' solar and home battery is at 60%
+example- start charging the car when there is '4 kw' solar and the home battery is at 100%
 
-Car will automatically charge offpeak anyway and top up if required (normal charge setting for me)
+example- stop charging the car when the is '0 kw' solar and home battery is at 60%
+
+Car will automatically top up off peak if required (normal charge setting for me)
 40% of home battery is usually enough for my daily commute
 
 ----------------------------------------------------------------------------------------------------------
@@ -20,7 +21,11 @@ new apk - will connect local db and have UI to select conditions to start / stop
 ----------------------------------------------------------------------------------------------------------
 
 API resourses for car appear available from https://www.teslaapi.io/
-App will generate average from realworld data to determine start / stop based on parameters
+
+App will generate average from db data to determine start / stop based on parameters
+
+Params to reduce cycling in overcast conditions 
+
 new app will run on android tablet as part of home automation / IoT hub
 
 ----------------------------------------------------------------------------------------------------------
