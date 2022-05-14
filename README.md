@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------------
-Create a conditions based charge automation process to top up the car from home solar & battery
+Create conditions based charge automation process to top up the car from home solar & battery
 ------------------------------------------------------------------------------------------------------------
 
 example- start charging the car when there is 'x.x kw' solar and the home battery is at 100%
