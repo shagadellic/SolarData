@@ -10,9 +10,9 @@ give me access to their API.
 Vendor website uses server side java to render pages and typical
 scraping methods will not work. Hence this 'creative' approach. 
 
-Prerequisite is a session cookie of the authenticated website.
-Login to the site on the browser once, then put the url and the
-site title into the config.xml file
+Prerequisite is a token issued by the vendor website.
+Login to the site on the browser once, then put the url (token)
+and the site title into the config.xml file
 
   <Vendor>
     <URL>https://portal.vendor.com/ui/#/cgi/BLAH123</URL>
