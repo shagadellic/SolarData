@@ -30,7 +30,8 @@ App will generate average from db data to determine start / stop based on parame
 
 Params to reduce cycling in overcast conditions 
 
-new app will run on android tablet as part of home automation / IoT hub
+new app for on android tablet as part of home automation / IoT hub
+
 or perhaps a windows / powershell / poshgui solution on said IoT hub
 
 ----------------------------------------------------------------------------------------------------------
