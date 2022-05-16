@@ -1,4 +1,4 @@
-USE [redback]
+USE [YourDatabase]
 GO
 
 /****** Object:  Table [dbo].[solar_data]    Script Date: 16/05/2022 11:26:02 AM ******/
