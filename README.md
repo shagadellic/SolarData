@@ -15,8 +15,7 @@ miner.ps1 - collects data into an sqlexpress database. Thing will live on a Pi o
 
 had to fudge my own quasi API as the vendor will not grant me access to it (atm..)
 
-will move the line numbers to retrieve into the config.xml
-keep code static
+find_page_title.ps1 - find the site title to put into config.xml
 
 if you have a powerwall things may be different with API access
 
