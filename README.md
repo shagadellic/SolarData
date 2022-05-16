@@ -33,5 +33,8 @@ Params to reduce cycling in overcast conditions
 android or perhaps a windows / powershell / poshgui runs on home automation / IoT hub
 
 ----------------------------------------------------------------------------------------------------------
+
+If you have the cash, just buy more panels and a bigger battery - dont worry about active management ;)
+
 Twitter: @psanders_aus
 
