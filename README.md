@@ -21,7 +21,7 @@ keep code static
 if you have a powerwall things may be different with API access
 
 ----------------------------------------------------------------------------------------------------------
-new apk - will connect local db and have UI to select conditions to start / stop charging 
+under development - app with UI to select conditions to start / stop charging 
 ----------------------------------------------------------------------------------------------------------
 
 API resourses for car appear available from https://www.teslaapi.io/
@@ -30,9 +30,7 @@ App will generate average from db data to determine start / stop based on parame
 
 Params to reduce cycling in overcast conditions 
 
-new app for on android tablet as part of home automation / IoT hub
-
-or perhaps a windows / powershell / poshgui solution on said IoT hub
+android or perhaps a windows / powershell / poshgui runs on home automation / IoT hub
 
 ----------------------------------------------------------------------------------------------------------
 Twitter: @psanders_aus
