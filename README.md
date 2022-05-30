@@ -32,7 +32,7 @@ This all runs well on a preloved (<150 bucks) Intel Nuc siting in the laundry
 If you have a powerwall you are probably laughing at the need for this ;)
                                        
 ----------------------------------------------------------------------------------------------------------
-Under development - UI to select conditions to start / stop charging etc
+WIP - UI to select conditions to start / stop charging etc
 ----------------------------------------------------------------------------------------------------------
 
 API resourses for car appear available from https://www.teslaapi.io/
