@@ -21,7 +21,7 @@ Edit the config.xml file to connect to your solar vendors web gui - tested with 
 
 Use find_page_title.ps1 to find the site title to put into config.xml
 
-Add the tokenised URL to the <URL> field
+Add your authenticated tokenised URL to the <URL> field
 
 update the fields with the line number you want to retrieve (copy your solar gui page 
   
@@ -37,11 +37,11 @@ Under development - UI to select conditions to start / stop charging etc
 
 API resourses for car appear available from https://www.teslaapi.io/
 
-App will generate average from db data to determine start / stop based on parameters
+App use db data to determine start / stop etc based on parameters entered
 
-Params to reduce cycling in overcast conditions 
+Initial testing has not bricked my car. Use at your own peril
 
-Going to Run the UI on a tablet that is stuck on kitchen wall.. using it as a home hub  
+Going to Run the UI on tablet that is stuck on my kitchen wall.. using it as a home hub  
 
 ----------------------------------------------------------------------------------------------------------
 
