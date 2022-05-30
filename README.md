@@ -27,12 +27,12 @@ update the fields with the line number you want to retrieve (copy your solar gui
   
 and paste to notepad, count line number starting at zero)
   
-This all runs well on a preloved (<150 bucks) Intel Nuc 
+This all runs well on a preloved (<150 bucks) Intel Nuc siting in the laundry 
 
-if you have a powerwall you are probably laughing at the need for this ;)
+If you have a powerwall you are probably laughing at the need for this ;)
                                        
 ----------------------------------------------------------------------------------------------------------
-under development - app with UI to select conditions to start / stop charging 
+Under development - UI to select conditions to start / stop charging etc
 ----------------------------------------------------------------------------------------------------------
 
 API resourses for car appear available from https://www.teslaapi.io/
@@ -41,7 +41,7 @@ App will generate average from db data to determine start / stop based on parame
 
 Params to reduce cycling in overcast conditions 
 
-android or perhaps a windows / powershell / poshgui runs on home automation / IoT hub
+Going to Run the UI on a tablet that is stuck on kitchen wall.. using it as a home hub  
 
 ----------------------------------------------------------------------------------------------------------
 
