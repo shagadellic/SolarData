@@ -9,11 +9,13 @@ example- stop charging the car when the is '0 kw' solar and home battery is at 6
 Car will automatically top up off peak if required (normal charge setting for me)
 40% of home battery is usually enough for my daily commute
 
+Could use the data to control all sorts of guff...
+
 ----------------------------------------------------------------------------------------------------------
 miner.ps1 - collects data into an sqlexpress database.
 ----------------------------------------------------------------------------------------------------------
 
-had to fudge my own quasi API as the vendor will not grant me access to it (atm..)
+I have had to fudge my own 'API' as the vendor will not grant me access to theirs (atm..)
 
 Edit the config.xml file to connect to your solar vendors web gui - tested with Chrome
 
@@ -24,9 +26,11 @@ Add the tokenised URL to the <URL> field
 update the fields with the line number you want to retrieve (copy your solar gui page 
   
 and paste to notepad, count line number starting at zero)
+  
+This all runs well on a preloved (<150 bucks) Intel Nuc 
 
-if you have a powerwall things may be different with API access
-
+if you have a powerwall you are probably laughing at the need for this ;)
+                                       
 ----------------------------------------------------------------------------------------------------------
 under development - app with UI to select conditions to start / stop charging 
 ----------------------------------------------------------------------------------------------------------
