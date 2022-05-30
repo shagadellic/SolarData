@@ -12,7 +12,7 @@ Car will automatically top up off peak if required (normal charge setting for me
 Could use the data to control all sorts of guff...
 
 ----------------------------------------------------------------------------------------------------------
-miner.ps1 - collects data into an sqlexpress database.
+miner.ps1 - Add page data into an sqlexpress database.
 ----------------------------------------------------------------------------------------------------------
 
 I have had to fudge my own 'API' as the vendor will not grant me access to theirs (atm..)
@@ -39,7 +39,7 @@ WIP - UI to select conditions to start / stop charging etc
 
 Unofficial API for Tesla is available from https://www.teslaapi.io/
 
-App use db data to determine start / stop etc based on parameters entered
+App use db data to determine start / stop etc based on parameters selected
 
 Initial testing has not bricked my car. Use at your own peril. 
 
@@ -48,6 +48,8 @@ Going to Run the UI on tablet that is stuck on my kitchen wall.. using it as a h
 ----------------------------------------------------------------------------------------------------------
 
 If you have the cash, just buy more panels and a bigger battery - dont worry about active management ;)
-
+                                       
+If you are a real programmer and can do this better / less lines of code / whatever.. please share!                                       
+                                       
 Twitter: @psanders_aus
 
