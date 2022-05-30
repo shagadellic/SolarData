@@ -10,12 +10,20 @@ Car will automatically top up off peak if required (normal charge setting for me
 40% of home battery is usually enough for my daily commute
 
 ----------------------------------------------------------------------------------------------------------
-miner.ps1 - collects data into an sqlexpress database. Thing will live on a Pi on local network
+miner.ps1 - collects data into an sqlexpress database.
 ----------------------------------------------------------------------------------------------------------
 
 had to fudge my own quasi API as the vendor will not grant me access to it (atm..)
 
-find_page_title.ps1 - find the site title to put into config.xml
+Edit the config.xml file to connect to your solar vendors web gui - tested with Chrome
+
+Use find_page_title.ps1 to find the site title to put into config.xml
+
+Add the tokenised URL to the <URL> field
+
+update the fields with the line number you want to retrieve (copy your solar gui page 
+  
+and paste to notepad, count line number starting at zero)
 
 if you have a powerwall things may be different with API access
 
