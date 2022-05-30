@@ -27,7 +27,9 @@ update the fields with the line number you want to retrieve (copy your solar gui
   
 and paste to notepad, count line number starting at zero)
   
-This all runs well on a preloved (<150 bucks) Intel Nuc siting in the laundry 
+This all runs well on a preloved (<150 bucks) Intel Nuc siting in the laundry
+                                       
+Was fun to circumvent server side Java that snookered the usual powershell html parsing                                        
 
 If you have a powerwall you are probably laughing at the need for this ;)
                                        
@@ -35,11 +37,11 @@ If you have a powerwall you are probably laughing at the need for this ;)
 WIP - UI to select conditions to start / stop charging etc
 ----------------------------------------------------------------------------------------------------------
 
-API resourses for car appear available from https://www.teslaapi.io/
+Unofficial API for Tesla is available from https://www.teslaapi.io/
 
 App use db data to determine start / stop etc based on parameters entered
 
-Initial testing has not bricked my car. Use at your own peril
+Initial testing has not bricked my car. Use at your own peril. 
 
 Going to Run the UI on tablet that is stuck on my kitchen wall.. using it as a home hub  
 
