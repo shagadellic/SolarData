@@ -2,7 +2,7 @@
 
 --------------------------------------------------------------------
 
-P.Sanders 13/05/2021 v1.2
+P.Sanders 30/05/2021 v1.5
 
 Crude way of mining data for my solar install, given they wont
 give me access to their API.
@@ -10,7 +10,7 @@ give me access to their API.
 Vendor website uses server side java to render pages and typical
 scraping methods will not work. Hence this 'creative' approach. 
 
-Prerequisite is a session cookie of the authenticated website.
+Prerequisite is a tokenised URL of the authenticated website.
 Login to the site on the browser once, then put the url and the
 site title into the config.xml file
 
@@ -21,15 +21,15 @@ site title into the config.xml file
 
 Run miner.ps1 from task scheduler / cron. Suggest 10 minute loop.
 
-The mined data can then be used by other apps when connected to the 
-database. The charge_window column can be used by connected apps 
-for logic status they wish to record. ie: 'charge car start / stop' 
-etc
-
 Requires sqlexpress. Connection string in config.xml
+
+Exposed data can be used for home automation, car charging etc
 
 1.1 initial tested cut
 1.2 added battery load capture
+1.3 added formatting to clipboard data
+1.4 fields read from config.xml
+1.5 Removed charge_window field
 
 --------------------------------------------------------------------
 
@@ -70,15 +70,15 @@ Add-Type @"
 
 $p = Get-Process | Where-Object { $_.MainWindowTitle -eq $ApplicationTitle }
 if ($p) 
-{
-    $h = $p[0].MainWindowHandle
-    [void] [StartActivateProgramClass]::SetForegroundWindow($h)
-    [System.Windows.Forms.SendKeys]::SendWait($Keys)
-    if ($WaitTime) 
-    {
-        Start-Sleep -Seconds $WaitTime
-    }
-}
+   {
+      $h = $p[0].MainWindowHandle
+      [void] [StartActivateProgramClass]::SetForegroundWindow($h)
+      [System.Windows.Forms.SendKeys]::SendWait($Keys)
+      if ($WaitTime) 
+      {
+          Start-Sleep -Seconds $WaitTime
+      }
+   }
 }
 
 # ---------------------
@@ -141,22 +141,28 @@ foreach ($Node in $VendorNode) {
 # -----------------------------------
 
 Start-Process chrome $SiteURL
-Start-Sleep -Seconds 10
+Start-Sleep -Seconds 7
 Send-Keys $SiteName "^a ^c"
+Start-Sleep -Seconds 3
 
-$RawData = Get-Clipboard
+$RawData = Get-Clipboard -Format Text
 
 # Pull out the text we want
 # -------------------------
 
-$SolarLevel = $RawData[19]
-$BatteryLevel = $RawData[36]
-$BatteryLoad = $RawData[23]
-$BatteryState = $RawData[24]
-$GridLevel = $RawData[21]
-$LoadLevel = $RawData[25]
+$FieldNode = $config.SelectNodes('//Fields')
 $Event = Get-Date -Format "yyyyMMddHHmmss"
-$ChargeWindow = ''
+
+foreach ($Node in $FieldNode) {
+
+    $SolarLevel = $RawData[$Node.SolarLevel]
+    $GridLevel = $RawData[$Node.GridLevel]
+    $BatteryLoad = $RawData[$Node.BatteryLoad]
+    $BatteryState = $RawData[$Node.BatteryState]
+    $LoadLevel = $RawData[$Node.LoadLevel]
+    $BatteryLevel = $RawData[$Node.BatteryLevel]
+    
+}
 
 # Write to database
 # -----------------
@@ -169,9 +175,8 @@ $SqlInsert = "insert into solar_data (
    [battery_load],
    [battery_state],
    [grid_level],
-   [load_level],
-   [charge_window]
-                    
+   [load_level]
+                       
    )  
                
    Values (
@@ -182,9 +187,8 @@ $SqlInsert = "insert into solar_data (
    '$BatteryLoad',
    '$BatteryState',
    '$GridLevel',
-   '$LoadLevel',
-   '$ChargeWindow'
-                   
+   '$LoadLevel'
+                      
    )
                
    GO"
@@ -196,8 +200,10 @@ Invoke-Sqlcmd -serverinstance $SQLServer -Database $SQLDBName -Username $SQLUser
 
 $Process = Get-Process | Where-Object {$_.MainWindowTitle -eq $SiteName}
 $Process.CloseMainWindow()
-
 Write-Host $Event
+
+
+
 
 
 

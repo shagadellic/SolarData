@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Config>
+  <Database>
+    <ServerName>localhost\sqlexpress</ServerName>
+    <DatabaseName>mydatabase</DatabaseName>
+    <UserName>myuser</UserName>
+    <UserPass>mypassword</UserPass>
+  </Database>  
+  <Vendor>
+    <URL>https://portal.vendor.com/ui/#/gui/1234</URL>
+    <Title>Vendor - Google Chrome</Title>
+  </Vendor>
+  <Fields>
+    <SolarLevel>1</SolarLevel>
+    <GridLevel>2</GridLevel>
+    <BatteryLoad>3</BatteryLoad>
+    <BatteryState>4</BatteryState>
+    <LoadLevel>5</LoadLevel>
+    <BatteryLevel>6</BatteryLevel>
+  </Fields>
+</Config>

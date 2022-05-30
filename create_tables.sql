@@ -15,8 +15,7 @@ CREATE TABLE [dbo].[solar_data](
 	[battery_load] [nchar](10) NULL,
 	[battery_state] [nchar](16) NULL,
 	[grid_level] [nchar](10) NULL,
-	[load_level] [nchar](10) NULL,
-	[charge_window] [nchar](10) NULL
+	[load_level] [nchar](10) NULL
 ) ON [PRIMARY]
 GO
 
