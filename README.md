@@ -37,7 +37,7 @@ If you have a powerwall you are probably laughing at the need for this ;)
 WIP - UI to select conditions to start / stop charging etc
 ----------------------------------------------------------------------------------------------------------
 
-Unofficial API for Tesla is available from https://www.teslaapi.io/
+Unofficial API doco for Tesla is available from https://www.teslaapi.io/
 
 App use db data to determine start / stop etc based on parameters selected
 
