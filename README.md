@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------
-Wanted to collect solar data to automate stuff about the home
+Wanted to collect solar data and automate turning stuff on and off based on solar / battery conditions...
 ----------------------------------------------------------------------------------------------------------
 
 I have had to fudge my own solar 'API' as the vendor will not grant me access to theirs (atm..)
@@ -16,9 +16,10 @@ and paste to notepad, count line number starting at zero)
   
 This all runs well on a preloved (<150 bucks) Intel Nuc siting in the laundry
                                        
-Was fun to circumvent server side Java that snookered the usual powershell html parsing.
-Has proven to be a robust data source! Will create some apps for the home hub to do useful stuff                                        
-                                     
+Was fun to circumvent server side Java that snookered all the usual powershell html parsing.
+Very simple but it has proven to create a robust left field data source! 
+                                       
+I will get around to creating some apps that will use the data.      
                                      
 If you are a real programmer and can do this better / less lines of code / whatever.. please share!                                       
                                        
