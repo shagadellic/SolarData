@@ -1,21 +1,8 @@
-------------------------------------------------------------------------------------------------------------
-Create conditions based charge automation to top up EV from home solar & battery
-------------------------------------------------------------------------------------------------------------
-
-example- start charging the car when there is '4 kw' solar and the home battery is at 100%
-
-example- stop charging the car when the is '0 kw' solar and home battery is at 60%
-
-Car will automatically top up off peak if required (normal charge setting for me)
-40% of home battery is usually enough for my daily commute
-
-Could use the data to control all sorts of guff...
-
 ----------------------------------------------------------------------------------------------------------
-miner.ps1 - Add page data into an sqlexpress database.
+Wanted to collect solar data to automate stuff about the home
 ----------------------------------------------------------------------------------------------------------
 
-I have had to fudge my own 'API' as the vendor will not grant me access to theirs (atm..)
+I have had to fudge my own solar 'API' as the vendor will not grant me access to theirs (atm..)
 
 Edit the config.xml file to connect to your solar vendors web gui - tested with Chrome
 
@@ -29,26 +16,10 @@ and paste to notepad, count line number starting at zero)
   
 This all runs well on a preloved (<150 bucks) Intel Nuc siting in the laundry
                                        
-Was fun to circumvent server side Java that snookered the usual powershell html parsing                                        
-
-If you have a powerwall you are probably laughing at the need for this ;)
-                                       
-----------------------------------------------------------------------------------------------------------
-WIP - UI to select conditions to start / stop charging etc
-----------------------------------------------------------------------------------------------------------
-
-Unofficial API doco for Tesla is available from https://www.teslaapi.io/
-
-App use db data to determine start / stop etc based on parameters selected
-
-Initial testing has not bricked my car. Use at your own peril. 
-
-Going to Run the UI on tablet that is stuck on my kitchen wall.. using it as a home hub  
-
-----------------------------------------------------------------------------------------------------------
-
-If you have the cash, just buy more panels and a bigger battery - dont worry about active management ;)
-                                       
+Was fun to circumvent server side Java that snookered the usual powershell html parsing.
+Has proven to be a robust data source! Will create some apps for the home hub to do useful stuff                                        
+                                     
+                                     
 If you are a real programmer and can do this better / less lines of code / whatever.. please share!                                       
                                        
 Twitter: @psanders_aus
