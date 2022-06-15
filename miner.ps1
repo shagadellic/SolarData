@@ -2,26 +2,25 @@
 
 --------------------------------------------------------------------
 
-P.Sanders 30/05/2021 v1.5
+P.Sanders 15/06/2022 v1.6
 
-Crude way of mining data for my solar install, given they wont
-give me access to their API.
-
-Vendor website uses server side java to render pages and typical
-scraping methods will not work. Hence this 'creative' approach. 
+Scrape text from selected fields to create a local datasource
+of solar and battery conditions throught the day / week etc
 
 Prerequisite is a tokenised URL of the authenticated website.
-Login to the site on the browser once, then put the url and the
-site title into the config.xml file
+Login to you solar providers data portal and copy the URL into
+config.xml
 
   <Vendor>
     <URL>https://portal.vendor.com/ui/#/cgi/BLAH123</URL>
     <Title>Vendor Website Title - Google Chrome</Title>
   </Vendor>
+  
+Use 'find_page_title.ps1' to retrieve the text to put into <Title>  
 
 Run miner.ps1 from task scheduler / cron. Suggest 10 minute loop.
 
-Requires sqlexpress. Connection string in config.xml
+Requires sqlexpress. Connection string also in config.xml
 
 Exposed data can be used for home automation, car charging etc
 
@@ -30,6 +29,7 @@ Exposed data can be used for home automation, car charging etc
 1.3 added formatting to clipboard data
 1.4 fields read from config.xml
 1.5 Removed charge_window field
+1.6 Updated instructions
 
 --------------------------------------------------------------------
 
