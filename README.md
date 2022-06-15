@@ -20,8 +20,8 @@ Add your authenticated tokenised URL to the <URL> field
 update the fields with the line number you want to retrieve (copy your solar gui page 
 and paste to notepad, count line number starting at zero)
   
-This all runs well on a preloved (<150 bucks) Intel Nuc siting in the laundry       
-Very simple but it has proven to create a robust 'left field' data source! 
+This all runs well on a preloved (<150 bucks) Intel Nuc siting in the laundry. Very simple 
+but it has proven to create a robust 'left field' data source! 
                                        
 I will get around to creating some apps that will use the data.      
                                      
