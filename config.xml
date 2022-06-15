@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <Config>
   <Database>
-    <ServerName>localhost\sqlexpress</ServerName>
+    <ServerName>myserver</ServerName>
     <DatabaseName>mydatabase</DatabaseName>
-    <UserName>myuser</UserName>
+    <UserName>myusername</UserName>
     <UserPass>mypassword</UserPass>
   </Database>  
   <Vendor>
-    <URL>https://portal.vendor.com/ui/#/gui/1234</URL>
-    <Title>Vendor - Google Chrome</Title>
+    <URL>https://your solar dashboard url with token</URL>
+    <Title>Dashboard - My Solar Company - Google Chrome</Title>
   </Vendor>
   <Fields>
-    <SolarLevel>1</SolarLevel>
-    <GridLevel>2</GridLevel>
-    <BatteryLoad>3</BatteryLoad>
-    <BatteryState>4</BatteryState>
-    <LoadLevel>5</LoadLevel>
-    <BatteryLevel>6</BatteryLevel>
+    <SolarLevel>19</SolarLevel>
+    <GridLevel>21</GridLevel>
+    <BatteryLoad>23</BatteryLoad>
+    <BatteryState>24</BatteryState>
+    <LoadLevel>25</LoadLevel>
+    <BatteryLevel>35</BatteryLevel>
   </Fields>
 </Config>
