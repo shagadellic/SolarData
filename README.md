@@ -21,7 +21,8 @@ update the fields with the line number you want to retrieve (copy your solar gui
 and paste to notepad, count line number starting at zero)
   
 This all runs well on a preloved (<150 bucks) Intel Nuc siting in the laundry. Very simple 
-but it has proven to create a robust 'left field' data source! 
+but it has proven to create a robust 'left field' data source! The field numbers specified
+work with the Redback solar portal. They probably all work in a similar way.
                                        
 I will get around to creating some apps that will use the data.      
                                      
