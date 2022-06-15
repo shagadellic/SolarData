@@ -1,8 +1,14 @@
 ----------------------------------------------------------------------------------------------------------
-Wanted to collect solar data and automate turning stuff on and off based on solar / battery conditions...
+Wanted to automate turning stuff on and off based on solar / battery conditions.........
 ----------------------------------------------------------------------------------------------------------
 
-I have had to fudge my own solar 'API' as the vendor will not grant me access to theirs (atm..)
+There are apps that will do this provided you can plug into the vendor API. I have had to fudge
+my own solar 'API' data source as the vendor will not grant me access to theirs (atm..)
+
+This is a simple scrape engine that works on the caveat that you can still cut and paste the 
+text results created by the server side java.
+
+To make it work...
 
 Edit the config.xml file to connect to your solar vendors web gui - tested with Chrome
 
