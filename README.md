@@ -1,12 +1,13 @@
-----------------------------------------------------------------------------------------------------------
-Wanted to automate turning stuff on and off based on solar / battery conditions.........
+
+Wanted to automate turning stuff on and off using home solar / battery conditions.........
 ----------------------------------------------------------------------------------------------------------
 
 There are apps that will do this provided you can plug into the vendor API. I have had to fudge
-my own solar 'API' data source as the vendor will not grant me access to theirs (atm..)
+my own solar 'API' data source as the vendor will not grant me access to theirs.
 
 miner.ps1 is a simple scrape program that works on the caveat that you can still cut and paste the 
-text results created by server side java. You cannot parse the site as you normally would.
+text results created by server side java. You cannot parse the site as you normally would. I have
+it running in a scheduled task every 15 minutes with a nightly reboot.
 
 To make it work...
 
