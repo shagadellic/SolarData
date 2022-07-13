@@ -39,7 +39,7 @@ function Send-Keys {
 
 # --------------------------------------------------------
 # Use the C# library to send keystrokes to an application.
-#     found online somewhere, cudos to its creator
+#     found online somewhere, kudos to its creator
 # --------------------------------------------------------
 
 param (
