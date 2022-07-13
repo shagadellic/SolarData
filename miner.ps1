@@ -8,16 +8,17 @@ Scrape text from selected fields to create a local datasource
 of solar and battery conditions throught the day / week etc
 
 Prerequisite is a tokenised URL of the authenticated website.
+
 Login to you solar providers data portal and copy the URL into
 config.xml
+
+Use 'find_page_title.ps1' to retrieve the text to put into <Title>  
 
   <Vendor>
     <URL>https://portal.vendor.com/ui/#/cgi/BLAH123</URL>
     <Title>Vendor Website Title - Google Chrome</Title>
   </Vendor>
   
-Use 'find_page_title.ps1' to retrieve the text to put into <Title>  
-
 Run miner.ps1 from task scheduler / cron. Suggest 10 minute loop.
 
 Requires sqlexpress. Connection string also in config.xml
